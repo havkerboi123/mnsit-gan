@@ -61,7 +61,7 @@ def load_generator():
     
     try:
         # Load the complete trained model using pickle
-        with open('/Users/mhmh/Desktop/japan-test/q3/generator_model.pkl', 'rb') as f:
+        with open('generator_model.pkl', 'rb') as f:
             generator = pkl.load(f)
         
         generator.to(device)
